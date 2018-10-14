@@ -18,15 +18,6 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Employees <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -42,20 +33,6 @@
         <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="manager_schedule.html">Schedule</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-        </li>
     </ul>
     <div id="myTabContent" class="tab-content">
         <div class="tab-pane fade active show" id="employees">'
@@ -64,41 +41,41 @@
                     <thead>
                         <tr>
                             <th scope="col">Name</th>
-                            <th scope="col">Column heading</th>
-                            <th scope="col">Column heading</th>
-                            <th scope="col">Column heading</th>
+                            <th scope="col">Available</th>
+                            <th scope="col">Not Available</th>
+                            <th scope="col">Hours/Week</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope="row">Rhonda Wallace</th>
-                            <td>Column content</td>
-                            <td>Column content</td>
-                            <td>Column content</td>
+                            <td>Monday, Wednesday, Friday</td>
+                            <td>Tuesday Nights</td>
+                            <td>15 <button type="button" class="btn edit-employee-button">Edit</button></td>
                         </tr>
                         <tr>
                             <th scope="row">Kyle Schwartz</th>
-                            <td>Column content</td>
-                            <td>Column content</td>
-                            <td>Column content</td>
+                            <td>Monday-Friday</td>
+                            <td>Saturday, Sunday</td>
+                            <td>40 <button type="button" class="btn edit-employee-button">Edit</button></td>
                         </tr>
                         <tr>
                             <th scope="row">Janice Maublin</th>
-                            <td>Column content</td>
-                            <td>Column content</td>
-                            <td>Column content</td>
+                            <td>Monday, Tuesday, Wednesday, Friday</td>
+                            <td>Thursdays</td>
+                            <td>25 <button type="button" class="btn edit-employee-button">Edit</button></td>
                         </tr>
                         <tr>
                             <th scope="row">Felix Navidad</th>
-                            <td>Column content</td>
-                            <td>Column content</td>
-                            <td>Column content</td>
+                            <td>Tuesday, Wednesday, Friday</td>
+                            <td>8am-12pm Weekdays</td>
+                            <td>20 <button type="button" class="btn edit-employee-button">Edit</button></td>
                         </tr>
                         <tr>
                             <th scope="row">Dwayne "The Rock" Johnson</th>
-                            <td>Column content</td>
-                            <td>Column content</td>
-                            <td>Column content</td>
+                            <td>Monday-Sunday</td>
+                            <td>None</td>
+                            <td>80 <button type="button" class="btn edit-employee-button">Edit</button></td>
                         </tr>
 
                     </tbody>
@@ -106,12 +83,6 @@
             </div>
         </div>
         <div class="tab-pane fade" id="profile">
-
-        </div>
-        <div class="tab-pane fade" id="dropdown1">
-
-        </div>
-        <div class="tab-pane fade" id="dropdown2">
 
         </div>
     </div>

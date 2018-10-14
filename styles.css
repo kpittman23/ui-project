@@ -2525,6 +2525,13 @@
    background-color: #78C2AD;
    border-color: #78C2AD;
  }
+
+ .edit-employee-button {
+  color: #fff;
+  background-color: #78C2AD;
+  border-color: #78C2AD;
+  float: right;
+}
  
  .btn-primary:hover {
    color: #fff;
