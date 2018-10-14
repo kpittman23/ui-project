@@ -18,3 +18,7 @@
 .login-container .submit-button {
     width: 100%
 }
+
+.jumbotron .tab-content > .active {
+    display: inline;
+}
