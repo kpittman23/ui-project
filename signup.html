@@ -7,7 +7,7 @@
     <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/tabService.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
 </head>
 
 <body>
@@ -29,19 +29,18 @@
                 <div class="tab-pane fade active show" id="manager">
                     <form>
                         <fieldset>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Manager ID</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <div class="form-group has-success has-danger">
+                                <label class="form-control-label" for="inputManagerId">Manager ID</label>
+                                <input type="text" class="form-control" id="managerId"placeholder="Enter Manager ID" >
+
                             </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Username</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                    placeholder="Enter username">
+                            <div class="form-group has-success has-danger">
+                                <label for="inputUsername">Username</label>
+                                <input type="text" class="form-control" id="username"placeholder="Enter username" >
                             </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                    placeholder="Enter email">
+                            <div class="form-group has-success has-danger">
+                                <label for="inputEmail">Email</label>
+                                <input type="text" class="form-control" id="email"placeholder="Enter email" >
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
