@@ -7,6 +7,7 @@
     <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="tabService.js"></script>
 </head>
 
 <body>
@@ -90,16 +91,6 @@
 
     </div>
     </div>
-
-    <script>
-        $(document).ready(function () {
-            $(".nav-tabs a").click(function () {
-                $('.nav-tabs a').removeClass('active');
-                $(this).addClass('active');
-                $(this).tab('show');
-            });
-        });
-    </script>
 </body>
 
 </html>
