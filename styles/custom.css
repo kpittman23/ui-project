@@ -8,17 +8,65 @@
     width: 100%;
 }
 
-.login-container .jumbotron {
-    margin-left: 12.5%;
+.master-scheduler-header {
+	font-size: 150%;
+}
+
+.login-container .tab-style {
+	color: #fff!important;
+	background-color: #6CC3D5!important;
+	border-color: #6CC3D5!important;	
+}
+
+ .login-container .tab-style:link {
+   color: #fff;
+	background-color: #4eb7cd;
+	border-color: #44b3ca;
+ }
+
+.login-container .tab-style:focus {
+	color: #fff!important;
+	background-color: #4eb7cd!important;
+	border-color: #44b3ca!important;
+}
+
+.login-container .tab-style:hover {
+	color: #fff!important;
+	background-color: #4eb7cd!important;
+	border-color: #44b3ca!important;	
+}
+
+ .login-container .tab-style:active {
+   color: #fff!important;
+	background-color: #4eb7cd!important;
+	border-color: #44b3ca!important;
+ }
+
+
+.login-container .jumbotron-tab {
+    padding-top: 0%;
+	padding-left: 0%;
+	padding-right: 0%;
+	padding-bottom:0%;
+	margin-left: 12.5%;
     margin-right: 12.5%;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
 
+.login-container .jumbotron {
+    padding-top: 0%;
+	padding-bottom:0%;
+	margin-left: 0%;
+    margin-right: 0%;
+	margin-bottom: 0%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 .login-container .submit-button {
     width: 100%
 }
 
-.tab-content > .active {
+.jumbotron .tab-content > .active {
     display: inline;
 }
