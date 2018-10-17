@@ -13,7 +13,7 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Master Scheduler</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,15 +23,6 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -84,14 +75,19 @@
                                             <form>
                                                 <fieldset>
                                                     <div class="form-group">
-                                                        <label for="exampleInputEmail1">Name</label>
-                                                        <input type="email" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="Rhonda Wallace">
+                                                        <label for="rhondaFirstName">First Name</label>
+                                                        <input type="text" class="form-control" id="rhondaFirstName"
+                                                            value="Rhonda">
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="exampleInputPassword1">Availability</label>
-                                                        <input type="password" class="form-control" id="exampleInputPassword1"
-                                                            placeholder="Monday, Wednesday">
+                                                        <label for="rhondaLastName">Last Name</label>
+                                                        <input type="text" class="form-control" id="rhondaLastName"
+                                                            value="Wallace">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="rhondaAvailability">Availability</label>
+                                                        <input type="text" class="form-control" id="rhondaAvailability"
+                                                            value="Monday, Wednesday">
                                                     </div>
                                                 </fieldset>
                                             </form>
@@ -128,6 +124,30 @@
                             <td>Column content</td>
                             <td>Column content <button type="button" class="btn edit-employee-button">Edit</button></td>
                         </tr>
+                        <tr>
+                            <th scope="row">Morgan Best</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content <button type="button" class="btn edit-employee-button">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Katey Pittman</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content <button type="button" class="btn edit-employee-button">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Andrew Kump</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content <button type="button" class="btn edit-employee-button">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Adrevv Kump</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content <button type="button" class="btn edit-employee-button">Edit</button></td>
+                        </tr>
 
                     </tbody>
                 </table>
@@ -138,45 +158,71 @@
                 <table class="table table-hover">
                     <thead>
                         <tr>
-                            <th scope="col">Type</th>
-                            <th scope="col">Column heading</th>
-                            <th scope="col">Column heading</th>
-                            <th scope="col">Column heading</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Monday</th>
+                            <th scope="col">Tuesday</th>
+                            <th scope="col">Wednesday</th>
+                            <th scope="col">Thursday</th>
+                            <th scope="col">Friday</th>
+                            <th scope="col">Saturday</th>
+                            <th scope="col">Sunday</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="table-active">
-                            <th scope="row">Active</th>
+                        <tr>
+                            <th scope="row">Rhonda Wallace</th>
+                            <td>8:00am-4:00pm <br /><small>Westchester Location</small></td>
+                            <td></td>
+                            <td>10:00am-3:00pm <br /><small>Mason Location</small></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Kyle Schwartz</th>
                             <td>Column content</td>
                             <td>Column content</td>
                             <td>Column content</td>
                         </tr>
                         <tr>
-                            <th scope="row">Default</th>
+                            <th scope="row">Janice Maublin</th>
                             <td>Column content</td>
                             <td>Column content</td>
                             <td>Column content</td>
                         </tr>
                         <tr>
-                            <th scope="row">Default</th>
+                            <th scope="row">Felix Navidad</th>
                             <td>Column content</td>
                             <td>Column content</td>
                             <td>Column content</td>
                         </tr>
                         <tr>
-                            <th scope="row">Default</th>
+                            <th scope="row">Dwayne "The Rock" Johnson</th>
                             <td>Column content</td>
                             <td>Column content</td>
                             <td>Column content</td>
                         </tr>
                         <tr>
-                            <th scope="row">Default</th>
+                            <th scope="row">Morgan Best</th>
                             <td>Column content</td>
                             <td>Column content</td>
                             <td>Column content</td>
                         </tr>
                         <tr>
-                            <th scope="row">Default</th>
+                            <th scope="row">Katey Pittman</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Andrew Kump</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Adrevv Kump</th>
                             <td>Column content</td>
                             <td>Column content</td>
                             <td>Column content</td>
