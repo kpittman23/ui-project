@@ -52,100 +52,139 @@
     </ul>
     <div id="myTabContent" class="tab-content">
         <div class="tab-pane fade active show" id="employees">
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">Name</th>
-                        <th scope="col">Column heading</th>
-                        <th scope="col">Column heading</th>
-                        <th scope="col">Column heading</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Rhonda Wallace</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Kyle Schwartz</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Janice Maublin</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Felix Navidad</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Dwayne "The Rock" Johnson</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
+            <div class="table-margin">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Column heading</th>
+                            <th scope="col">Column heading</th>
+                            <th scope="col">Column heading</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Rhonda Wallace</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content <button type="button" class="btn edit-employee-button" data-toggle="modal"
+                                    data-target="#rhondaModal">Edit</button></td>
+                            <!-- The modal -->
+                            <div class="modal" id="rhondaModal">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Edit details</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- Form inside of modal -->
+                                            <form>
+                                                <fieldset>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Name</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp" placeholder="Rhonda Wallace">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword1">Availability</label>
+                                                        <input type="password" class="form-control" id="exampleInputPassword1"
+                                                            placeholder="Monday, Wednesday">
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+                        <tr>
+                            <th scope="row">Kyle Schwartz</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content <button type="button" class="btn edit-employee-button">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Janice Maublin</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content <button type="button" class="btn edit-employee-button">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Felix Navidad</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content <button type="button" class="btn edit-employee-button">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Dwayne "The Rock" Johnson</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content <button type="button" class="btn edit-employee-button">Edit</button></td>
+                        </tr>
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
         <div class="tab-pane fade" id="schedule">
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">Type</th>
-                        <th scope="col">Column heading</th>
-                        <th scope="col">Column heading</th>
-                        <th scope="col">Column heading</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="table-active">
-                        <th scope="row">Active</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Default</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Default</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Default</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Default</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Default</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
+            <div class="table-margin">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Type</th>
+                            <th scope="col">Column heading</th>
+                            <th scope="col">Column heading</th>
+                            <th scope="col">Column heading</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-active">
+                            <th scope="row">Active</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Default</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Default</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Default</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Default</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Default</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </body>
