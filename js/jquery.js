@@ -40,9 +40,11 @@ $(document).ready(function () {
         if (value.includes('@')) {
             $("#email").addClass('is-valid');
             $("#email").removeClass('is-invalid');
+            $("#badEmail").hide();
         } else {
             $("#email").removeClass('is-valid');
             $("#email").addClass('is-invalid');
+            $("#badEmail").show();
         }
     });
 });
@@ -59,6 +61,23 @@ $(document).ready(function () {
             $("#password").removeClass('is-valid');
             $("#password").addClass('is-invalid');
             $("#badPassword").show();
+        }
+    });
+});
+
+$(document).ready(function () {
+    $('#verifyPassword').focusout(function () {
+        var value = $("#password").val();
+        var value2 = $("#verifyPassword").val();
+        var upperCase = new RegExp('[A-Z]');
+        if ( ( value == value2 ) && value.length >= 5 && value.match(upperCase) ) {
+            $("#verifyPassword").addClass('is-valid');
+            $("#verifyPassword").removeClass('is-invalid');
+            $("#badVerifyPassword").hide();
+        } else {
+            $("#verifyPassword").removeClass('is-valid');
+            $("#verifyPassword").addClass('is-invalid');
+            $("#badVerifyPassword").show();
         }
     });
 });
