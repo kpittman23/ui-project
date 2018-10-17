@@ -46,3 +46,19 @@ $(document).ready(function () {
         }
     });
 });
+
+$(document).ready(function () {
+    $('#password').focusout(function () {
+        var upperCase = new RegExp('[A-Z]');
+        var value = $("#password").val();
+        if (value.length >= 5 && value.match(upperCase)) {
+            $("#password").addClass('is-valid');
+            $("#password").removeClass('is-invalid');
+            $("#badPassword").hide();
+        } else {
+            $("#password").removeClass('is-valid');
+            $("#password").addClass('is-invalid');
+            $("#badPassword").show();
+        }
+    });
+});
