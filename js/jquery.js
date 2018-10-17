@@ -14,9 +14,12 @@ $(document).ready(function () {
         if (value.length == 4 && Math.floor(value) == value && $.isNumeric(value)) {
             $("#managerId").addClass('is-valid');
             $("#managerId").removeClass('is-invalid');
+            $("#badManagerId").hide();
         } else {
             $("#managerId").removeClass('is-valid');
             $("#managerId").addClass('is-invalid');
+            $("#badManagerId").show();
+
         }
     });
 });
@@ -24,12 +27,16 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('#username').focusout(function () {
         var value = $("#username").val();
-        if (value.length >= 5 && value.length <= 15) {
+        if (value.length >= 5 && value.length <= 25) {
             $("#username").addClass('is-valid');
             $("#username").removeClass('is-invalid');
+            $("#badUsername").hide();
+
         } else {
             $("#username").removeClass('is-valid');
             $("#username").addClass('is-invalid');
+            $("#badUsername").show();
+
         }
     });
 });
