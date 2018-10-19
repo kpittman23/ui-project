@@ -67,6 +67,6 @@
     width: 100%
 }
 
-.jumbotron .tab-content > .active {
+.tab-content > .active {
     display: inline;
 }
