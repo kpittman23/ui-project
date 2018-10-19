@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "hookyqr.beautify"
+        "hookyqr.beautify",
+        "alphabotsec.vscode-eclipse-keybindings"
     ]
 }
