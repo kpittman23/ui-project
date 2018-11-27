@@ -88,3 +88,9 @@ $(document).ready(function () {
         }
     });
 });
+
+$(document).ready(function () {
+    $('button:contains("Save changes")').click(function () {
+        $('.update-me').html('Thursday');
+    });
+});
