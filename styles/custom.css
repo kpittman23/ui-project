@@ -108,11 +108,15 @@
 	right: 15px;
 }
 
-
+/* 
 tr:nth-child(even) {
 	background: rgba(0, 0, 0, 0.075);
 }
 
 .table-hover tbody tr:nth-child(odd):hover {
 	background: white;
+} */
+
+.row-active {
+	background: rgba(0, 0, 0, 0.075);
 }

@@ -108,8 +108,11 @@ $(document).ready(function () {
             $(".progress-bar").attr('aria-valuenow', 0).css('width', "0%");
             $(".progress-bar").show();
         }, 4000);
+    });
+});
 
-
-
+$(document).ready(function () {
+    $('tr').click(function () {
+        $(this).addClass('row-active');
     });
 });
