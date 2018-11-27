@@ -97,5 +97,9 @@
 }
 
 .myDropdown:hover .dropbtn {
-    background-color: #ffffff;
+	background-color: #ffffff;
+}
+
+.progress {
+	background-color: white;
 }

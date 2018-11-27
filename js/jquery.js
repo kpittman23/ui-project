@@ -77,7 +77,7 @@ $(document).ready(function () {
         var value = $("#password").val();
         var value2 = $("#verifyPassword").val();
         var upperCase = new RegExp('[A-Z]');
-        if ( ( value == value2 ) && value.length >= 5 && value.match(upperCase) ) {
+        if ((value == value2) && value.length >= 5 && value.match(upperCase)) {
             $("#verifyPassword").addClass('is-valid');
             $("#verifyPassword").removeClass('is-invalid');
             $("#badVerifyPassword").hide();
@@ -92,5 +92,24 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('button:contains("Save changes")').click(function () {
         $('.update-me').html('Thursday');
+    });
+});
+
+$(document).ready(function () {
+    $('button:contains("Generate")').click(function () {
+        var i = 0;
+        var timer = setInterval(function () {
+            $(".progress-bar").attr('aria-valuenow', i++).css('width', i++ + "%");
+        }, 30);
+        setTimeout(function () {
+            $('a:contains("Schedule")').click();
+            clearInterval(timer);
+            $(".progress-bar").hide();
+            $(".progress-bar").attr('aria-valuenow', 0).css('width', "0%");
+            $(".progress-bar").show();
+        }, 4000);
+
+
+
     });
 });
