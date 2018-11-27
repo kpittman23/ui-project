@@ -110,5 +110,9 @@
 
 
 tr:nth-child(even) {
-background: rgba(0, 0, 0, 0.075);
+	background: rgba(0, 0, 0, 0.075);
+}
+
+.table-hover tbody tr:nth-child(odd):hover {
+	background: white;
 }
