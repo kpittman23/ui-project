@@ -52,3 +52,7 @@
 .tab-content>.active {
 	display: inline;
 }
+
+.progress {
+	background-color: white;
+}
