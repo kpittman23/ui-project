@@ -103,3 +103,7 @@
 .progress {
 	background-color: white;
 }
+
+.myDropdown:hover .myDropdown-content {
+	right: 15px;
+}
