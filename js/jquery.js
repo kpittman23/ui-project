@@ -111,15 +111,15 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
-    $('tr').click(function () {
-        if ($(this).hasClass('row-active')) {
-            $(this).removeClass('row-active')
-        } else {
-            $(this).addClass('row-active');
-        }
-    });
-});
+// $(document).ready(function () {
+//     $('tr').click(function () {
+//         if ($(this).hasClass('row-active')) {
+//             $(this).removeClass('row-active')
+//         } else {
+//             $(this).addClass('row-active');
+//         }
+//     });
+// });
 
 
 $(document).ready(function () {
