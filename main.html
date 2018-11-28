@@ -27,13 +27,13 @@
             </form>
             <div class="myDropdown">
                 <input type="image" width="30" height="30" src="images/account.svg" class="burger-menu" />
-                <div class="dropdown-menu show" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 42px, 0px); top: 0px; right: 20px; will-change: transform;">
+                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 42px, 0px); top: 0px; right: 20px; will-change: transform;">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
                     <a class="dropdown-item" href="#">Something else here</a>
                     <a class="dropdown-item" href="#">Separated link</a>
-                  </div>
-              </div>
+                </div>
+            </div>
         </div>
     </nav>
     <div class="progress">
@@ -60,7 +60,11 @@
                             <th scope="col">Unavailable</th>
                             <th scope="col">Max Weekly Hours</th>
                             <th scope="col">Phone Number</th>
-                            <th scope="col"><button type="button" class="btn edit-employee-button">Edit</button>Address</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">
+                                <button type="button" class="btn edit-employee-button">Start Edit</button>
+                                <button type="button" class="btn btn-secondary edit-employee-button hidden">Stop Edit</button>
+                            </th>
 
                         </tr>
                     </thead>
@@ -70,8 +74,9 @@
                             <td class="update-me">Wednesdays</td>
                             <td>40</td>
                             <td>678-999-8212</td>
-                            <td>123 Soulja Boi Lane <button type="button" class="btn edit-employee-button" data-toggle="modal"
-                                    data-target="#rhondaModal">Edit</button></td>
+                            <td>123 Soulja Boi Lane </td>
+                            <td> <button type="button" class="btn edit-employee-button hidden"
+                                data-toggle="modal" data-target="#rhondaModal">Edit</button></td>
                             <!-- The modal -->
                             <div class="modal" id="rhondaModal">
                                 <div class="modal-dialog" role="document">
@@ -118,56 +123,72 @@
                             <td>Saturday, Sunday</td>
                             <td>40</td>
                             <td>555-867-5309</td>
-                            <td>123 Ranbow Lane <button type="button" class="btn edit-employee-button">Edit</button></td>
+                            <td>123 Ranbow Lane</td>
+                            <td> <button type="button" class="btn edit-employee-button hidden"
+                                data-toggle="modal" data-target="#rhondaModal">Edit</button></td>
                         </tr>
                         <tr>
                             <th scope="row">Janice Maublin</th>
                             <td>Monday, Wednesday, Friday</td>
                             <td>20</td>
                             <td>555-555-5555</td>
-                            <td>33 Cotton Eye Joe Ln <button type="button" class="btn edit-employee-button">Edit</button></td>
+                            <td>33 Cotton Eye Joe Ln </td>
+                            <td> <button type="button" class="btn edit-employee-button hidden"
+                                data-toggle="modal" data-target="#rhondaModal">Edit</button></td>
                         </tr>
                         <tr>
                             <th scope="row">Felix Navidad</th>
                             <td>Saturday, Sunday</td>
                             <td>40</td>
                             <td>123-456-7890</td>
-                            <td>12 North Pole Ct <button type="button" class="btn edit-employee-button">Edit</button></td>
+                            <td>12 North Pole Ct </td>
+                            <td> <button type="button" class="btn edit-employee-button hidden"
+                                data-toggle="modal" data-target="#rhondaModal">Edit</button></td>
                         </tr>
                         <tr>
                             <th scope="row">Dwayne "The Rock" Johnson</th>
                             <td>Mornings</td>
                             <td>30</td>
                             <td>222-333-4444</td>
-                            <td>989 Moana Dr <button type="button" class="btn edit-employee-button">Edit</button></td>
+                            <td>989 Moana Dr </td>
+                            <td> <button type="button" class="btn edit-employee-button hidden"
+                                data-toggle="modal" data-target="#rhondaModal">Edit</button></td>
                         </tr>
                         <tr>
                             <th scope="row">Morgan Best</th>
                             <td>Thursday</td>
                             <td>20</td>
                             <td>555-555-5556</td>
-                            <td>1234 Puppy Ln <button type="button" class="btn edit-employee-button">Edit</button></td>
+                            <td>1234 Puppy Ln </td>
+                            <td> <button type="button" class="btn edit-employee-button hidden"
+                                data-toggle="modal" data-target="#rhondaModal">Edit</button></td>
                         </tr>
                         <tr>
                             <th scope="row">Katey Pittman</th>
                             <td>Monday, Wednesday, Friday</td>
                             <td>20</td>
                             <td>513-555-5555</td>
-                            <td>50 Unicorn Way <button type="button" class="btn edit-employee-button">Edit</button></td>
+                            <td>50 Unicorn Way</td>
+                            <td> <button type="button" class="btn edit-employee-button hidden"
+                                data-toggle="modal" data-target="#rhondaModal">Edit</button></td>
                         </tr>
                         <tr>
                             <th scope="row">Andrew Kump</th>
                             <td>Friday, Saturday, Sunday</td>
                             <td>40</td>
                             <td>666-123-3456</td>
-                            <td>215 Lion St <button type="button" class="btn edit-employee-button">Edit</button></td>
+                            <td>215 Lion St</td>
+                            <td> <button type="button" class="btn edit-employee-button hidden"
+                                data-toggle="modal" data-target="#rhondaModal">Edit</button></td>
                         </tr>
                         <tr>
                             <th scope="row">Andrevv Kump</th>
                             <td>Monday, Tuesday, Wednesday, Thursday</td>
                             <td>20</td>
                             <td>654-332-1666</td>
-                            <td>512 Lion St <button type="button" class="btn edit-employee-button">Edit</button></td>
+                            <td>512 Lion St</td>
+                            <td> <button type="button" class="btn edit-employee-button hidden"
+                                data-toggle="modal" data-target="#rhondaModal">Edit</button></td>
                         </tr>
 
                     </tbody>
