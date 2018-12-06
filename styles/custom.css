@@ -126,3 +126,7 @@ td button {
 	font-size: 12px !important; 
 	padding-top: 2px !important;
 }
+
+.new-employee {
+	float: left;
+}
