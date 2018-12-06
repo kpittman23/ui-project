@@ -108,8 +108,48 @@ $(document).ready(function () {
             $(".progress-bar").attr('aria-valuenow', 0).css('width', "0%");
             $(".progress-bar").show();
         }, 4000);
+    });
+});
 
+// $(document).ready(function () {
+//     $('tr').click(function () {
+//         if ($(this).hasClass('row-active')) {
+//             $(this).removeClass('row-active')
+//         } else {
+//             $(this).addClass('row-active');
+//         }
+//     });
+// });
+
+
+$(document).ready(function () {
+    $('.myDropdown').click(function () {
+        if ($(this).hasClass('show')) {
+            $(this).removeClass('show');
+            $('.dropdown-menu').removeClass('show')
+        } else {
+            $(this).addClass('show');
+            $('.dropdown-menu').addClass('show');
+        }
+    });
+});
+
+
+$(document).ready(function () {
+    $('button:contains("Start Edit")').click(function () {
+        $('tbody button').removeClass('hidden');
+        $('button:contains("Start Edit")').addClass('hidden');
+        $('button:contains("Stop Edit")').removeClass('hidden');
 
 
     });
 });
+
+$(document).ready(function () {
+    $('button:contains("Stop Edit")').click(function () {
+        $('tbody button').addClass('hidden');
+        $('button:contains("Start Edit")').removeClass('hidden');
+        $('button:contains("Stop Edit")').addClass('hidden');
+    });
+});
+

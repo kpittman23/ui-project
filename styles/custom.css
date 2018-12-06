@@ -14,14 +14,14 @@
 
 .login-container .nav-link.active {
 	color: #fff;
-	background-color: #6CC3D5 ;
+	background-color: #6CC3D5;
 	border-color: #44b3ca;
 }
 
 .login-container .nav-link {
 	color: #6CC3D5;
 	background-color: #d2e6eb;
-	border-color: #6CC3D5;	
+	border-color: #6CC3D5;
 }
 
 
@@ -64,27 +64,27 @@
 }
 
 .myDropdown {
-    position: relative;
-    display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 
 .myDropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #000000;
-    min-width: 10px;
-    z-index: 1;
+	display: none;
+	position: absolute;
+	background-color: #000000;
+	min-width: 10px;
+	z-index: 1;
 }
 
 .myDropdown-content a {
-    color: white;
-    padding: 30px 16px;
+	color: white;
+	padding: 30px 16px;
 	text-align: center;
-    text-decoration: none;
-    display: block;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	font-size: 24px;
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-decoration: none;
+	display: block;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	font-size: 11px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .myDropdown-content a:hover {
@@ -93,7 +93,7 @@
 }
 
 .myDropdown:hover .myDropdown-content {
-    display: block;
+	display: block;
 }
 
 .myDropdown:hover .dropbtn {
@@ -102,4 +102,27 @@
 
 .progress {
 	background-color: white;
+}
+
+.myDropdown:hover .myDropdown-content {
+	right: 15px;
+}
+
+
+.row-active {
+	background: rgba(0, 0, 0, 0.075);
+}
+
+.row-active:hover {
+	background: rgba(48, 47, 47, 0.175) !important;
+}
+
+.hidden {
+	display: none;
+}
+
+td button {
+	height: 24px;
+	font-size: 12px !important; 
+	padding-top: 2px !important;
 }
